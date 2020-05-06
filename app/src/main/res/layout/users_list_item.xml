@@ -50,7 +50,7 @@
         android:layout_width="365dp"
         android:layout_height="wrap_content"
         android:text="@string/user_role"
-        android:textAlignment="textEnd"
+        android:textAlignment="textStart"
         android:textColor="@android:color/holo_blue_light"
         android:textSize="17sp"
         app:layout_constraintStart_toEndOf="@+id/firstNameTextView"
