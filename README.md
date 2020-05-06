@@ -1,6 +1,6 @@
 <h1 align="center">Welcome to List Of Ona Application Users 👋</h1>
 <p>
-  <a href="https://github.com/MichaelOdera/ListOfOnaUsers-ONA-API-.git" target="_blank">
+  <a href="README.md" target="_blank">
     <img alt="Documentation" src="https://img.shields.io/badge/documentation-yes-brightgreen.svg" />
   </a>
   <a href="LICENSE" target="_blank">
