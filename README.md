@@ -26,7 +26,7 @@ Run or Debug in any Android Device or Emulator having the minimum SDK requiremen
 
 👤 **Michael Ochieng' Odera**
 
-* Website: michaeloderaportfolio.imfast.io
+* Website: [Michael Odera's Website](https://www.michaeloderaportfolio.imfast.io)
 * Github: [@MichaelOdera](https://github.com/MichaelOdera)
 * LinkedIn: [@Michael Odera](https://linkedin.com/in/michael-odera-02541485)
 
@@ -34,9 +34,3 @@ Run or Debug in any Android Device or Emulator having the minimum SDK requiremen
 
 Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](https://github.com/MichaelOdera/ListOfOnaUsers-ONA-API-/issues). You can also take a look at the [contributing guide](https://github.com/MichaelOdera/ListOfOnaUsers-ONA-API-/pulls).
 
-## Show your support
-
-Give a ⭐️ if this project helped you!
-
-***
-_This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
