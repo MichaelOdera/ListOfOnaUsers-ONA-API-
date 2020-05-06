@@ -3,7 +3,7 @@
   <a href="https://github.com/MichaelOdera/ListOfOnaUsers-ONA-API-.git" target="_blank">
     <img alt="Documentation" src="https://img.shields.io/badge/documentation-yes-brightgreen.svg" />
   </a>
-  <a href="#" target="_blank">
+  <a href="LICENSE" target="_blank">
     <img alt="License: MIT " src="https://img.shields.io/badge/License-MIT -yellow.svg" />
   </a>
 </p>
