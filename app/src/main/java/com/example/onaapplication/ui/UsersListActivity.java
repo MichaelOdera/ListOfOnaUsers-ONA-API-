@@ -4,7 +4,9 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.app.ProgressDialog;
 import android.os.Bundle;
+import android.os.Handler;
 import android.util.Log;
 import android.view.View;
 import android.widget.ProgressBar;
@@ -28,7 +30,10 @@ public class UsersListActivity extends AppCompatActivity {
     private List<OnaApiResponse> mUsers;
 
     @BindView(R.id.userRecyclerView) RecyclerView mUsersRecyclerView;
-    @BindView(R.id.progressBar) ProgressBar mProgressBar;
+
+    ProgressDialog progressDialog;
+    private int progressStatus = 0;
+    private Handler handler = new Handler();
 
 
     @Override
@@ -36,6 +41,12 @@ public class UsersListActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_users_list);
         ButterKnife.bind(this);
+
+        progressDialog = new ProgressDialog(this);
+        String onaUsers = "Ona Users List";
+        String currentlyLoading = "Currently Loading";
+
+        showProgressDialogWithTitle(onaUsers, currentlyLoading);
 
         OnaApi client = OnaClient.getClient();
         Call<List<OnaApiResponse>> call = client.getUsers();
@@ -61,7 +72,7 @@ public class UsersListActivity extends AppCompatActivity {
             }
 
             private void onSuccessAction() {
-                mProgressBar.setVisibility(View.GONE);
+                hideProgressDialogWithTitle();
                 mUsersRecyclerView.setVisibility(View.VISIBLE);
             }
 
@@ -73,5 +84,39 @@ public class UsersListActivity extends AppCompatActivity {
         });
 
 
+    }
+
+    private void showProgressDialogWithTitle(String title,String substring) {
+        progressDialog.setTitle(title);
+        progressDialog.setMessage(substring);
+        progressDialog.setProgressStyle(ProgressDialog.STYLE_HORIZONTAL);
+        progressDialog.setCancelable(false);
+        progressDialog.setMax(100);
+        progressDialog.show();
+
+        new Thread(new Runnable() {
+            public void run() {
+                while (progressStatus < 100) {
+                    try{
+
+                        Thread.sleep(600);
+                        progressStatus += 5;
+                    } catch (InterruptedException e){
+                        e.printStackTrace();
+                    }
+                    handler.post(new Runnable() {
+                        public void run() {
+                            progressDialog.setProgress(progressStatus);
+                        }
+                    });
+                }
+            }
+        }).start();
+
+    }
+
+    private void hideProgressDialogWithTitle() {
+        progressDialog.setProgressStyle(ProgressDialog.STYLE_SPINNER);
+        progressDialog.dismiss();
     }
 }
