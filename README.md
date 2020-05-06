@@ -28,7 +28,7 @@ Run or Debug in any Android Device or Emulator having the minimum SDK requiremen
 
 * Website: michaeloderaportfolio.imfast.io
 * Github: [@MichaelOdera](https://github.com/MichaelOdera)
-* LinkedIn: [@Michael Odera](https://linkedin.com/in/Michael Odera)
+* LinkedIn: [@Michael Odera](https://linkedin.com/in/michael-odera-02541485)
 
 ## 🤝 Contributing
 
