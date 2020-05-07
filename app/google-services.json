@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "258768438694",
+    "firebase_url": "https://onaapplication.firebaseio.com",
+    "project_id": "onaapplication",
+    "storage_bucket": "onaapplication.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:258768438694:android:5a390c5835e2980a1a3b67",
+        "android_client_info": {
+          "package_name": "com.example.onaapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "258768438694-6r495h2pm1p6peipai4tmf9vnhae923a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDzWTc3mRLnXwV-_-KSnbiQpMazvWpnh5E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "258768438694-6r495h2pm1p6peipai4tmf9vnhae923a.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
