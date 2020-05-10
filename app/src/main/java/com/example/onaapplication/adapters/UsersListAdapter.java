@@ -5,8 +5,6 @@ import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Filter;
-import android.widget.Filterable;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -20,9 +18,8 @@ import java.util.List;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
-public class UsersListAdapter extends RecyclerView.Adapter<UsersListAdapter.UsersListViewHolder>{
+public class UsersListAdapter extends RecyclerView.Adapter<UsersListAdapter.UsersListViewHolder> {
     private List<OnaApiResponse> mUsers;
-    private List<OnaApiResponse> mFilteredUsers;
     private Context mContext;
 
     public UsersListAdapter(Context context, List<OnaApiResponse> users){
@@ -47,8 +44,6 @@ public class UsersListAdapter extends RecyclerView.Adapter<UsersListAdapter.User
     public int getItemCount() {
         return mUsers.size();
     }
-
-
 
     public class UsersListViewHolder extends RecyclerView.ViewHolder{
         @BindView(R.id.firstNameTextView) TextView mFirstNameTextView;
